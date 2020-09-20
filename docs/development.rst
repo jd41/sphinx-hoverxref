@@ -21,17 +21,17 @@ To setup this approach, you need to put these settings in the ``conf.py`` of you
 
 .. code-block:: python
 
-   hoverxref_project = 'sphinx-hoverxref'
-   hoverxref_version = 'latest'
+   hoverxref_project = 'your-project'
+   hoverxref_version = 'your-version'
    hoverxref_api_host = 'https://readthedocs.org'
 
 After building the documentation all the requests will be done to URLs like::
 
-  https://readthedocs.org/api/v2/embed/?project=sphinx-hoverxref&version=latest&doc=...&section=...
+  https://readthedocs.org/api/v2/embed/?project=your-project&version=your-version&doc=...&section=...
 
 .. note::
 
-   The project *and* version has to be successfully built on Read the Docs to return the content requested.
+   The project *and* version (e.g. `latest`) has to be successfully built on Read the Docs to return the content requested.
 
 
 Building and serving docs locally
